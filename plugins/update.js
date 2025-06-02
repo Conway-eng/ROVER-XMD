@@ -29,7 +29,7 @@ cmd({
             return reply("✅ Your ROVER-XMD version is already up-to-date!");
         }
 
-        await reply("GOTAR XMD UPDATING WAIT PLS 👨‍💻...");
+        await reply("ROVER-XMD UPDATING WAIT PLS 👨‍💻...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");

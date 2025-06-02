@@ -22,7 +22,7 @@ cmd({
     }
 
     const fonts = response.data.result.map(item => `*${item.name}:*\n${item.result}`).join("\n\n");
-    const resultText = `✨ *𝖥𝖠𝖭𝖢𝖸 𝖥𝖮𝖭𝖳 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤𝖣* ✨\n\n> ${fonts}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ*`;
+    const resultText = `✨ *𝖥𝖠𝖭𝖢𝖸 𝖥𝖮𝖭𝖳 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤𝖣* ✨\n\n> ${fonts}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC*`;
 
     await conn.sendMessage(from, { text: resultText }, { quoted: m });
   } catch (error) {

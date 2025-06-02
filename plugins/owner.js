@@ -15,7 +15,7 @@ async (conn, mek, m, { from }) => {
 
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
-                      `FN:Gotar Tech\n` +  
+                      `FN: Conway\n` +  
                       `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` + 
                       'END:VCARD';
 
