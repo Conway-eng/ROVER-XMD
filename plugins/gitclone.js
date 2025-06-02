@@ -56,7 +56,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363400583993139@newsletter',
-          newsletterName: 'ROVER-XMD'
+          newsletterName: 'ROVER-XMD',
           serverMessageId: 143
         }
       }
