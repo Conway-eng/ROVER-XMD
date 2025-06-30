@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
     if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-    const sessdata = config.SESSION_ID.replace("SIGMA~MD~", '').split('#');
+    const sessdata = config.SESSION_ID.replace("SIGMA-MD~", '').split('#');
     if(sessdata.length < 2) return console.log('Invalid SESSION_ID format');
     const fileId = sessdata[0];
     const fileKey = sessdata[1];
@@ -80,6 +80,7 @@ if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
         })
     })
 }
+
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 9090;
