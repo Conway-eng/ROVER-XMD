@@ -11,7 +11,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/Conway-eng/ROVER-XMD';
+    const githubRepoURL = 'https://github.com/Russian-mafia1/ROVER-XMD';
 
     try {
         const match = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
