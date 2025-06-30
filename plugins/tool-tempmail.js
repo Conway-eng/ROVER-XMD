@@ -55,8 +55,8 @@ _Email will expire after 24 hours_
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363400583993139@newsletter',
-                        newsletterName: 'ROVER-XMD',
+                        newsletterJid: '120363401087525436@newsletter',
+                        newsletterName: 'HACKLINK TECH.INC',
                         serverMessageId: 101
                     }
                 }
