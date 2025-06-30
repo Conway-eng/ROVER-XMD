@@ -27,7 +27,7 @@ cmd({
     }
 
     // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/Conway-eng/ROVER-XMD/main/data/version.json';
+    const rawVersionUrl = 'https://raw.githubusercontent.com/Russian-mafia1//ROVER-XMD/main/data/version.json';
     let latestVersion = 'Unknown';
     let latestChangelog = 'No changelog available.';
     try {
@@ -53,7 +53,7 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/Conway-eng/ROVER-XMD';
+    const githubRepo = 'https://github.com/Russian-mafia1/ROVER-XMD';
 
     // Check update status
     let updateMessage = ` 😂Your ROVER-XMD version is up-to-date!`;
@@ -69,7 +69,7 @@ Use *.update* to update.`;
       `📌 *Bot Name:* ROVER-XMD\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
       `💾 *System Info:*\n⏳ *Uptime:* ${uptime}\n📟 *RAM Usage:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Host Name:* ${hostName}\n📅 *Last Update:* ${lastUpdate}\n\n` +
       `📝 *Changelog:*\n${latestChangelog}\n\n` +
-      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [HACKLINK TECH.INC](https://github.com/Conway-eng)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
+      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [HACKLINK TECH.INC](https://github.com/Russian-mafia1)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
@@ -80,8 +80,8 @@ Use *.update* to update.`;
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363400583993139@newsletter',
-          newsletterName: 'ROVER-XMD',
+          newsletterJid: '120363401087525436@newsletter',
+          newsletterName: 'HACKLINK TECH.INC',
           serverMessageId: 143
         }
       }
