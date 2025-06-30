@@ -35,7 +35,7 @@ async (conn, mek, m, { from, sender, reply }) => {
                 forwardingScore: 1000,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363400583993139@newsletter',
+                    newsletterJid: '120363401087525436@newsletter',
                     newsletterName: 'ROVER-XMD',
                     serverMessageId: 143
                 }
