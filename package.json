@@ -9,7 +9,7 @@
     "restart": "pm2 restart ROVER-XMD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.7.9",
+    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -47,7 +47,8 @@
     "yt-search":"2.11.1",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7",
-    "vm": "^0.1.0",
+    "unzipper": "^0.10.14",
+     "vm": "^0.1.0",
     "api-dylux":"1.8.5",
     "@mrnima/tiktok-downloader":"1.0.0",
     "@mrnima/facebook-downloader":"1.0.0",
