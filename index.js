@@ -67,14 +67,19 @@ const {
   
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("SIGMA-MD~", '');
-const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
-filer.download((err, data) => {
-if(err) throw err
-fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
-console.log("Session downloaded ✅")
-})})}
+    if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+    const sessdata = config.SESSION_ID.replace("SIGMA-MD~", '').split('#');
+    if(sessdata.length < 2) return console.log('Invalid SESSION_ID format');
+    const fileId = sessdata[0];
+    const fileKey = sessdata[1];
+    const filer = File.fromURL(`https://mega.nz/file/${fileId}#${fileKey}`)
+    filer.download((err, data) => {
+        if(err) throw err
+        fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
+            console.log("Session downloaded ")
+        })
+    })
+}
 
 const express = require("express");
 const app = express();
