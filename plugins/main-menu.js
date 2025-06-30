@@ -70,8 +70,8 @@ async (conn, mek, m, { from, reply }) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363400583993139@newsletter',
-          newsletterName: config.OWNER_NAME || 'ROVER-XMD',
+          newsletterJid: '120363401087525436@newsletter',
+          newsletterName: config.OWNER_NAME || 'HACKLINK TECH.INC',
           serverMessageId: 143
         }
       }
